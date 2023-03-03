@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  color: #3E3E3E;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #F5E6CA;
+}
+
+.task{
+  background-color: #C8D8EB;
+  list-style: none;
+  max-width: 25rem;
+  margin: 1rem auto;
+  padding: 1rem auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+}
