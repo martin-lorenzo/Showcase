@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge Game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="instructions">
+        <h2>How to Play</h2>
+        <ol>
+            <li>Choose a tile from the pair directly in front of you. If correct, you may proceed to the next pair. If incorrect, you lose a life, and restart at the beginning.</li>
+            <li>Continue making choices through all 5 pairs of tiles, remembering previously chosen incorrect tiles to avoid repeating mistakes.</li>
+            <li>Win by reaching the "Finish" tile without losing all 3 lives. Good luck and enjoy the game!</li>
+        </ol>
+    </div>
+
+    <div class="game-container">
+        <div class="start-container">
+            <div id="start-tile" class="tile start-tile">Start</div>
+        </div>
+        
+        <div class="tile-container">
+  
+        </div>
+        
+        <div class="end-container">
+            <div id="end-tile" class="tile">Finish</div>
+        </div>
+    </div>
+
+    
+    <div class="game-info">
+        <div style="display: flex; justify-content: flex-start; flex: 1;">
+            <span>Lives remaining: <span id="lives-remaining">3</span></span>
+        </div>
+        <div style="display: flex; justify-content: flex-end; flex: 1;">
+            <button id="reset-button">Restart Game</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
