@@ -1,3 +1,4 @@
+/* Root and Body Styling */
 body {
     font-size: 1.125em;
     background-color: #E5E4E2;
@@ -5,63 +6,54 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Heading Styling */
 h1 {
     font-size: 3em;
 }
-
-h2 {
+h2, #projects .project h3 {
     font-size: 2.5em;
 }
-
 h3 {
     font-size: 2em;
 }
-
 h4 {
     font-size: 1.75em;
 }
-
 h5 {
     font-size: 1.5em;
 }
-
 h6 {
     font-size: 1.25em;
 }
 
-.small, .text-small {
+.small, .text-small, #projects .project p {
     font-size: 1em;
 }
 
+/* Navbar Styling */
 .navbar {
     background-color: #A2D2FF;
     color: #FFFFFF;
+    padding-right: 2em;
 }
-
-.navbar a {
+.navbar a, footer a {
     color: #FFFFFF;
 }
-
-.navbar a:hover {
+.navbar a:hover, footer a:hover {
     color: #000000;
 }
 
-.navbar-nav {
-    padding-right: 2em;
-}
-
+/* Home Section Styling */
 #home {
     padding-left: 10%;
     padding-right: 10%;
 }
-
 #home .hero-img-container {
     overflow: hidden;
     border-radius: 50%;
     width: 250px;
     height: 250px;
 }
-
 #home .hero-img {
     object-fit: cover;
     object-position: top;
@@ -69,83 +61,75 @@ h6 {
     height: 100%;
     transform: scale(1.5);
 }
-
 #home .social-links a i {
     font-size: 2em;
 }
 
+/* Project Section Styling */
 #projects {
     background-color: #000000;
     color: #E5E4E2;
 }
-
 #projects a {
     color: #E5E4E2;
 }
-
 #projects a:hover {
     color: #A2D2FF;
 }
-
 .project {
     border: 1px solid #E5E4E2;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
 .project-img-container {
     height: auto;
     overflow: hidden;
 }
-
 .project-img {
     width: 100%;
     object-fit: cover;
 }
 
-p {
-    text-align: justify;
-}
-
-#projects .project h3 {
-    font-size: 2.5em;
-}
-
-#projects .project p {
-    font-size: 1em;
-}
-
+/* About Section Styling */
 #about {
     color: #000000;
 }
-
 .section-divider {
     border: black 1px solid;
     border-top: 1px solid #ccc;
     margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
   }
   
 
+/* Footer Styling */
 footer {
     background-color: #A2D2FF;
     color: #FFFFFF;
 }
-
-footer a {
-    color: #FFFFFF;
-}
-
-footer a:hover {
-    color: #E5E4E2;
-}
-
 footer .btn-primary {
     background-color: #E5E4E2;
     color: #000000;
 }
-
 footer .btn-primary:hover {
     background-color: #000000;
     color: #E5E4E2;
+}
+
+/* Text Styling */
+p {
+    text-align: justify;
+}
+
+/* Custom Container */
+@media (min-width: 992px) { 
+    .custom-container {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
