@@ -1,135 +1,116 @@
-/* Root and Body Styling */
 body {
-    font-size: 1.125em;
-    background-color: #E5E4E2;
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 1rem;
 }
 
-/* Heading Styling */
-h1 {
-    font-size: 3em;
-}
-h2, #projects .project h3 {
-    font-size: 2.5em;
-}
-h3 {
-    font-size: 2em;
-}
-h4 {
-    font-size: 1.75em;
-}
-h5 {
-    font-size: 1.5em;
-}
-h6 {
-    font-size: 1.25em;
+.instructions {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.small, .text-small, #projects .project p {
-    font-size: 1em;
-}
-
-/* Navbar Styling */
-.navbar {
-    background-color: #A2D2FF;
-    color: #FFFFFF;
-    padding-right: 2em;
-}
-.navbar a, footer a {
-    color: #FFFFFF;
-}
-.navbar a:hover, footer a:hover {
-    color: #000000;
-}
-
-/* Home Section Styling */
-#home {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-#home .hero-img-container {
-    overflow: hidden;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-#home .hero-img {
-    object-fit: cover;
-    object-position: top;
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px; 
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     width: 100%;
-    height: 100%;
-    transform: scale(1.5);
-}
-#home .social-links a i {
-    font-size: 2em;
 }
 
-/* Project Section Styling */
-#projects {
-    background-color: #000000;
-    color: #E5E4E2;
+
+#reset-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
-#projects a {
-    color: #E5E4E2;
+
+#reset-button:hover {
+    background-color: #3f9a40;
 }
-#projects a:hover {
-    color: #A2D2FF;
-}
-.project {
-    border: 1px solid #E5E4E2;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-.project-img-container {
-    height: auto;
-    overflow: hidden;
-}
-.project-img {
+
+.game-container {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: 1rem;
     width: 100%;
-    object-fit: cover;
+    max-width: 600px; /* You can adjust this value based on your design */
 }
 
-/* About Section Styling */
-#about {
-    color: #000000;
-}
-.section-divider {
-    border: black 1px solid;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+.start-tile {
+    background-color: #4caf50;
+    color: #fff;
 }
 
-.container {
-    max-width: 800px;
-  }
-  
-
-/* Footer Styling */
-footer {
-    background-color: #A2D2FF;
-    color: #FFFFFF;
-}
-footer .btn-primary {
-    background-color: #E5E4E2;
-    color: #000000;
-}
-footer .btn-primary:hover {
-    background-color: #000000;
-    color: #E5E4E2;
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
 }
 
-/* Text Styling */
-p {
-    text-align: justify;
+.tile.correct {
+    animation: correct 0.5s;
+    color: #3f9a40;
 }
 
-/* Custom Container */
-@media (min-width: 992px) { 
-    .custom-container {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+.tile.incorrect {
+    animation: incorrect 0.5s;
+}
+
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.5rem;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+
+.start-container, .end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes correct {
+    0% { background-color: #fff; }
+    50% { background-color: #8bc34a; }
+    100% { background-color: #fff; }
+}
+
+@keyframes incorrect {
+    0% { background-color: #fff; }
+    50% { background-color: #f44336; }
+    100% { background-color: #fff; }
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 600px) {
+    .game-container {
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: auto;
     }
 }
