@@ -33,11 +33,11 @@ h6 {
 /* Navbar Styling */
 .navbar {
     background-color: #A2D2FF;
-    color: #FFFFFF;
+    color: #2F4F4F;
     padding-right: 2em;
 }
 .navbar a, footer a {
-    color: #FFFFFF;
+    color: #2F4F4F;
 }
 .navbar a:hover, footer a:hover {
     color: #000000;
@@ -66,6 +66,11 @@ h6 {
 }
 
 /* Project Section Styling */
+
+.custom-padding {
+    padding: 2% 15% 5%;
+}
+
 #projects {
     background-color: #000000;
     color: #E5E4E2;
@@ -109,7 +114,7 @@ h6 {
 /* Footer Styling */
 footer {
     background-color: #A2D2FF;
-    color: #FFFFFF;
+    color: #2F4F4F;
 }
 footer .btn-primary {
     background-color: #E5E4E2;

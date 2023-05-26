@@ -14,6 +14,7 @@
 
 <body>
 
+
   <nav class="navbar navbar-expand-md navbar-light mb-4 vh-20">
     <div class="container">
       <a href="/" class="navbar-brand d-flex align-items-center">
@@ -31,9 +32,6 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
             <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
@@ -46,6 +44,8 @@
       </div>
     </div>
   </nav>
+  
+  
   
   <section id="home" class="container-fluid d-flex align-items-center mb-5 vh-80">
     <div class="container" style="max-width: 800px;">
@@ -61,7 +61,7 @@
           <div class="social-links">
             <a href="https://www.linkedin.com/in/martin-lorenzo-reyes-1a153279/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/martin-lorenzo" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="/assets/Resume - Reyes, Martin Lorenzo.pdf" download><i class="far fa-envelope"></i></a>
+            <a href="/assets/Resume - Reyes, Martin Lorenzo.pdf" download><i class="fa fa-cloud-download"></i></a>
           </div>
         </div>
       </div>
@@ -69,8 +69,9 @@
   </section>
   
 
-  <section id="projects" class="container-fluid" style="padding-left: 15%; padding-right: 15%; text-align: center;">
-    <h2>Projects</h2>
+  <section id="projects" class="container-fluid custom-padding">
+
+    <h2 class="text-center">Projects</h2>
   
     <div class="row align-items-center mb-4 project">
       <div class="col-md-6">
@@ -82,7 +83,8 @@
         <h3>Bridge Game</h3>
         <p>"Bridge" is created using Vanilla JavaScript, where the player aims to navigate a bridge by selecting the correct path through five pairs of tiles. The player's memory is tested as they lose a life each time an incorrect tile is chosen, adding an element of strategy.</p>
         <p>Technologies: HTML, CSS, JavaScript</p>
-        <a href="https://js-bridge-game.netlify.app/" target="_blank">View Project</a>
+        <a href="https://js-bridge-game.netlify.app/" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+        <a href="https://github.com/martin-lorenzo/Showcase/tree/p2-js-showcase" target="_blank"><i class="fab fa-github fa-2x"></i></a>
       </div>
     </div>
   
@@ -96,7 +98,8 @@
         <h3>Trello Clone</h3>
         <p>Trello clone is a powerful task management tool built on the MERN (MongoDB, Express.js, React, Node.js) stack. With boards, lists, and cards, users can effortlessly organize their projects, enhancing productivity and efficiency.</p>
         <p>Technologies: React, Node.js, Express</p>
-        <a href="https://trello-p3.netlify.app/" target="_blank">View Project</a>
+        <a href="https://trello-p3.netlify.app/" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+        <a href="https://github.com/martin-lorenzo/Showcase/tree/p3-trello-clone" target="_blank"><i class="fab fa-github fa-2x"></i></a>
       </div>
     </div>
   
@@ -110,13 +113,13 @@
         <h3>Budget me softly</h3>
         <p>A collaborative student project that is a budget tracking app designed to help users manage their finances effectively. Built in collaboration with colleagues, the app offers features such as expense tracking, budget planning, and insightful analytics to empower users in their financial journey.</p>
         <p>Technologies: React, Node.js, Express</p>
-        <a href="https://budgetmesoftly-v1.onrender.com/" target="_blank">View Project</a>
+        <a href="https://budgetmesoftly-v1.onrender.com/" target="_blank"><i class="fa fa-link fa-2x"></i></a>
       </div>
     </div>
   </section>
   
 
-  <section id="about" class="container">
+  <section id="about" class="container pt-5 pb-5">
 
     <div class="row">
 
@@ -188,7 +191,7 @@
           <div class="social-links">
             <a href="https://www.linkedin.com/in/martin-lorenzo-reyes-1a153279/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             <a href="https://github.com/martin-lorenzo" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="/assets/Resume - Reyes, Martin Lorenzo.pdf" download><i class="far fa-envelope fa-2x"></i></a>
+            <a href="/assets/Resume - Reyes, Martin Lorenzo.pdf" download><i class="fa fa-cloud-download fa-2x"></i></a>
           </div>
 
         </div>
@@ -203,7 +206,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-o0G6vJ3emZeQEZ/7s2h11/uSKqJVIq0tfu4Q1zj8nFEBbGylf8URtC3t+1gOYy1X"
     crossorigin="anonymous"></script>
 </body>
 
